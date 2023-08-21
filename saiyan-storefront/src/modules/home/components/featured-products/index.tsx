@@ -12,7 +12,7 @@ const FeaturedProducts = () => {
     <div className="py-12 bg-neutral-content">
       <div className="content-container py-12">
         <div className="flex flex-col items-center text-center mb-16 text-slate-900">
-          <h2 className="text-2xl mb-6">
+          <h2 className="text-5xl font-bold mb-8">
             Featured products
           </h2>
           <p className="text-xl max-w-lg mb-4">

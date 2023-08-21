@@ -67,3 +67,30 @@ export type InfiniteProductPage = {
     count: number
   }
 }
+
+export interface About {
+  date: string
+  imgUrl: string
+  title: string
+  description: string
+}
+
+export interface Service {
+  icon: any
+  title: string
+  description: string
+}
+
+export interface ServiceCardProps {
+  service: Service
+}
+
+export interface Material {
+  imgUrl: string
+  title: string
+  description: string
+}
+
+export interface MaterialCardProps {
+  material: Material
+}
