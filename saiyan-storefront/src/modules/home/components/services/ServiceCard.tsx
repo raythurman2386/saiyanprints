@@ -3,7 +3,7 @@ import { ServiceCardProps } from "types/global"
 
 const ServiceCard: React.FC<ServiceCardProps> = ({ service }) => {
   return (
-    <div className="card bg-neutral-content text-slate-900 shadow-sm hover:shadow-xl transition-shadow">
+    <div className="card bg-slate-300 text-slate-900 shadow-sm hover:shadow-xl transition-shadow">
       <figure className="mt-8 p-8 bg-slate-600 w-40 h-40 m-auto rounded-full">
         {service.icon}
       </figure>

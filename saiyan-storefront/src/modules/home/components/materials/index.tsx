@@ -2,7 +2,7 @@ import Card from "./Card"
 
 const Materials = () => {
   return (
-    <div id="materials" className="hero min-h-screen bg-slate-900 py-20">
+    <div id="materials" className="hero min-h-screen bg-slate-900 py-20 text-slate-300">
       <div className="content-container flex flex-col justify-evenly text-center">
         <div className="flex flex-col px-4">
           <h2 className="text-5xl font-bold mb-8">Materials</h2>

@@ -5,7 +5,7 @@ import Printer from "@modules/common/icons/printer"
 
 const Services = () => {
   return (
-    <div id="services" className="hero bg-slate-900 text-neutral-content py-12">
+    <div id="services" className="hero bg-slate-900 text-slate-300 py-12">
       <div className="content-container flex flex-col justify-evenly text-center">
         <div className="flex flex-col px-4">
           <h2 className="text-5xl font-bold mb-8">Services</h2>

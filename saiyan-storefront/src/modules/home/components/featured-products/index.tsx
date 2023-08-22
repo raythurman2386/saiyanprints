@@ -9,7 +9,7 @@ const FeaturedProducts = () => {
   const { data } = useFeaturedProductsQuery()
 
   return (
-    <div className="py-12 bg-neutral-content">
+    <div className="py-12 bg-slate-300">
       <div className="content-container py-12">
         <div className="flex flex-col items-center text-center mb-16 text-slate-900">
           <h2 className="text-5xl font-bold mb-8">Featured products</h2>

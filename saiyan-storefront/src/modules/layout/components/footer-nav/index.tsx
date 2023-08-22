@@ -59,7 +59,7 @@ const FooterNav = () => {
       <div
         className={`flex flex-col-reverse gap-y-4 justify-center xsmall:items-center xsmall:flex-row xsmall:justify-between ${kaushan_script.className}`}
       >
-        <span className="text-xsmall-regular text-gray-500">
+        <span className="text-xsmall-regular text-slate-400">
           © Copyright 2023 Saiyan Prints
         </span>
         <div className="min-w-[316px] flex xsmall:justify-end">

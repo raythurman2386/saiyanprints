@@ -4,7 +4,7 @@ const About = () => {
   return (
     <div
       id="about"
-      className="hero bg-neutral-content text-slate-900 flex flex-col justify-evenly text-center py-12"
+      className="hero bg-slate-300 text-slate-900 flex flex-col justify-evenly text-center py-12"
     >
       <div className="flex flex-col px-4 w-8/12 py-12">
         <h2 className="text-5xl font-bold mb-8">About</h2>
@@ -23,7 +23,6 @@ const About = () => {
               src={about.imgUrl}
               alt={about.title}
               loading="lazy"
-              placeholder="blur"
             />
             <h2 className="text-2xl font-semibold py-4" key={about.title + i}>
               {about.title}
