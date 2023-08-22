@@ -17,6 +17,7 @@
     "build": "cross-env npm run clean && npm run build:server && npm run build:admin",
     "build:server": "cross-env npm run clean && tsc -p tsconfig.json",
     "build:admin": "cross-env medusa-admin build",
+    "heroku-postbuild": "medusa migrations run",
     "watch": "cross-env tsc --watch",
     "test": "cross-env jest",
     "seed": "cross-env medusa seed -f ./data/seed.json",
