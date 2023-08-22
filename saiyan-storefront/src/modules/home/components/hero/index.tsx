@@ -10,7 +10,7 @@ const Hero = () => {
           Welcome to Saiyan Prints
         </h1>
         <p className="text-base-regular max-w-[32rem] mb-6 drop-shadow-md shadow-black">
-          We have a huge selection of 3d prints to choose from. If you don't see a specific item in our shop you would like, please contact us!
+          We have a huge selection of 3d prints to choose from. If you don&apos;t see a specific item in our shop you would like, please contact us!
         </p>
         <UnderlineLink href="/store">Explore products</UnderlineLink>
 
