@@ -1,1 +1,1 @@
-web: npm run serve
+web: npm run serve && node --optimize_for_size --max_old_space_size=1400 --gc_interval=100 dist/src/main.js
