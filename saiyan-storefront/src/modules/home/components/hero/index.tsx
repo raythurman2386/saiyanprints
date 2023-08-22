@@ -4,12 +4,12 @@ import Image from "next/image"
 const Hero = () => {
   return (
     <div className="h-[75vh] w-full relative">
-      <div className="text-white absolute inset-0 z-10 flex flex-col justify-center items-center text-center small:text-left small:justify-end small:items-start small:p-32 mx-2">
-        <div className=" bg-slate-800/70 p-12">
+      <div className="absolute inset-0 z-10 flex flex-col justify-center items-center text-center small:text-left small:justify-end small:items-start small:p-32 mx-2">
+        <div className=" bg-slate-800/70 text-slate-300 p-12">
           <h1 className="text-2xl-semi mb-4 drop-shadow-md shadow-black">
             Welcome to Saiyan Prints
           </h1>
-          <p className="text-base-regular max-w-[32rem] mb-6 drop-shadow-md shadow-black">
+          <p className="max-w-[32rem] mb-6 drop-shadow-md shadow-black">
             We have a huge selection of 3d prints to choose from. If you
             don&apos;t see a specific item in our shop you would like, please
             contact us!

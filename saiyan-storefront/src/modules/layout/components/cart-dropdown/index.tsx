@@ -35,7 +35,7 @@ const CartDropdown = () => {
         >
           <Popover.Panel
             static
-            className="hidden small:block absolute top-[calc(100%+1px)] right-0 bg-neutral-content w-[382px] text-slate-900"
+            className="hidden small:block absolute top-[calc(100%+1px)] right-0 bg-slate-300 border-b border-l border-r border-slate-700 w-[382px] text-slate-900"
           >
             <div className="p-4 flex items-center justify-center">
               <h3 className="text-large-semi">Shopping Cart</h3>

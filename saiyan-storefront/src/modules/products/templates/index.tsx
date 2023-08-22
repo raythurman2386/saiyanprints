@@ -21,7 +21,7 @@ const ProductTemplate: React.FC<ProductTemplateProps> = ({ product }) => {
 
   return (
     <ProductProvider product={product}>
-      <div className=" bg-neutral-content text-slate-900">
+      <div className=" bg-slate-300 text-slate-900 py-12">
         <div className="content-container flex flex-col small:flex-row small:items-start py-6 relative max-h-screen[75]">
           <div className="flex flex-col gap-y-8 w-full">
             <ImageGallery images={product?.images || []} />
@@ -34,10 +34,10 @@ const ProductTemplate: React.FC<ProductTemplateProps> = ({ product }) => {
             <ProductTabs product={product} />
           </div>
         </div>
-        <div className="content-container my-12 px-6 small:px-8 small:my-32">
+        <div className="content-container px-6 small:px-8 small:my-32">
           <RelatedProducts product={product} />
         </div>
-        <MobileActions product={product} show={!inView} />
+        {/* <MobileActions product={product} show={!inView} /> */}
       </div>
     </ProductProvider>
   )
