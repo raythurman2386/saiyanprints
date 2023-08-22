@@ -2,7 +2,7 @@ import Card from "./Card"
 
 const Materials = () => {
   return (
-    <div id="materials" className="hero min-h-screen bg-base-200 py-20">
+    <div id="materials" className="hero min-h-screen bg-slate-900 py-20">
       <div className="content-container flex flex-col justify-evenly text-center">
         <div className="flex flex-col px-4">
           <h2 className="text-5xl font-bold mb-8">Materials</h2>
@@ -26,37 +26,37 @@ export default Materials
 
 const materials = [
   {
-    imgUrl: "/materials/pla.webp",
+    imgUrl: "/materials/pla.jpg",
     title: "PLA/PLA Plus",
     description:
       "Affordable option for prototyping and testing dimensions, tolerances, aesthetics, and basic functionality. PLA is a strong durable material, and PLA Plus improves on standard PLA weaknesses and gives this filament the ability to print functional parts.",
   },
   {
-    imgUrl: "/materials/petg.webp",
+    imgUrl: "/materials/petg.jpg",
     title: "PETG",
     description:
       "Polyethylene Terephthalate Glycol - Water bottle and medical device manufacturers commonly use this material for the combination of strength and chemical resistance.",
   },
   {
-    imgUrl: "/materials/abs.webp",
+    imgUrl: "/materials/abs.jpg",
     title: "ABS/ASA",
     description:
       "ABS plastic maintains the same functionality as PLA while also being resistant to high impact. ABS is commonly used for outdoor and automotive applications. ASA is a slight upgrade from ABS simply in it's printability and UV Resistance.",
   },
   {
-    imgUrl: "/materials/nylon.webp",
+    imgUrl: "/materials/nylon.jpg",
     title: "Nylon",
     description:
       "The use of Nylon in additive manufacturing has allowed for the production of functional parts, mainly gears. Nylon is abrasive resistant, flexible and extremely durable.",
   },
   {
-    imgUrl: "/materials/cf.webp",
+    imgUrl: "/materials/cf.jpg",
     title: "Carbon Fiber",
     description:
       "Carbon Fiber in additive manufacturing is used as a composite material that can be added to existing materials to increase strength and stiffness. Most commonly added to form Carbon Fiber Nylon and Carbon Fiber PETG and Carbon Fiber PLA.",
   },
   {
-    imgUrl: "/materials/manymore.webp",
+    imgUrl: "/materials/manymore.jpg",
     title: "Many More",
     description:
       "There are over 20 different raw materials. Our services team can provide the absolute best material based on your application.",

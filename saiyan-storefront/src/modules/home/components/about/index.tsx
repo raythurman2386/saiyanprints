@@ -4,7 +4,7 @@ const About = () => {
   return (
     <div
       id="about"
-      className="hero bg-neutral-content text-base-200 flex flex-col justify-evenly text-center py-12"
+      className="hero bg-neutral-content text-slate-900 flex flex-col justify-evenly text-center py-12"
     >
       <div className="flex flex-col px-4 w-8/12 py-12">
         <h2 className="text-5xl font-bold mb-8">About</h2>
@@ -61,15 +61,8 @@ const abouts = [
       "Website built and deployed with the eCommerce portion of the site currently in development to run alongside of the Etsy Shop.",
   },
   {
-    date: "2022-04-03",
-    imgUrl: "/about/4.jpg",
-    title: "Storefront Location",
-    description:
-      "My wife and I moved and in our new home of Oklahoma we have a storefront for my wife's candles, my printing, and our friends woodworking shops!",
-  },
-  {
     date: "2023-08-31",
-    imgUrl: "/about/1.jpg",
+    imgUrl: "/about/4.jpg",
     title: "Full Standalone Store",
     description:
       "Finally broke away from the crutch that is Shopify and Etsy and built my own E-Commerce store.",

@@ -50,7 +50,7 @@ const Nav = () => {
     >
       <header
         className={clsx(
-          "relative h-16 px-8 mx-auto transition-colors bg-base-100 border-b border-transparent"
+          "relative h-16 px-8 mx-auto transition-colors bg-slate-900/90 border-b border-transparent"
         )}
       >
         <nav
