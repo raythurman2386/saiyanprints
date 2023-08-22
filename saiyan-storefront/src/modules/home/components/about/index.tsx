@@ -22,6 +22,8 @@ const About = () => {
               className="rounded-full m-auto p-2 bg-slate-200"
               src={about.imgUrl}
               alt={about.title}
+              loading="lazy"
+              placeholder="blur"
             />
             <h2 className="text-2xl font-semibold py-4" key={about.title + i}>
               {about.title}
