@@ -88,7 +88,6 @@ const projectConfig = {
     tls: {
       rejectUnauthorized: false,
     },
-    ssl: verify_none,
   },
   database_extra:
     process.env.NODE_ENV !== "development"
