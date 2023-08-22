@@ -36,7 +36,9 @@ const MainMenu = () => {
           </button>
         </div>
         <div>
-          <h1 className="text-xl-semi uppercase text-slate-200/90 hover:text-green-700/90">Saiyan Prints</h1>
+          <h1 className="text-xl-semi uppercase text-slate-200/90 hover:text-green-700/90">
+            Saiyan Prints
+          </h1>
         </div>
         <div className="flex-1 basis-0 flex justify-end">
           <button onClick={close}>

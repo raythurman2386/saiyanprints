@@ -28,22 +28,27 @@ Combine Medusa's modules for your commerce backend with the newest Next.js 13 fe
 </p>
 
 ### Prerequisites
+
 To use the starter you should have a Medusa server running locally on port 9000.
-For a quick setup, run: 
+For a quick setup, run:
+
 ```shell
 npx create-medusa-app@latest
 ```
+
 Check out [create-medusa-app docs](https://docs.medusajs.com/create-medusa-app) for more details and troubleshooting.
 
 # Overview
 
 The Medusa Next.js Starter is built with:
+
 - [Next.js](https://nextjs.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Typescript](https://www.typescriptlang.org/)
 - [Medusa](https://medusajs.com/)
 
 Features include:
+
 - Full e-commerce support:
   - Product Detail Page
   - Product Overview Page
@@ -61,8 +66,8 @@ Features include:
 
 ## Deploy
 
-
 ### Deploy with Vercel
+
 To get started, click the "Deploy with Vercel" button below.
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fmedusajs%2Fnextjs-starter-medusa&env=NEXT_PUBLIC_MEDUSA_BACKEND_URL&envDescription=The%20URL%20of%20your%20Medusa%20server&envLink=https%3A%2F%2Fdocs.medusajs.com%2Fdeployments%2Fserver%2F&demo-title=Medusa%20Next.js%20Starter&demo-description=A%20fully-fledged%20e-commerce%20store%20with%20Next.js%20and%20Medusa&demo-url=https%3A%2F%2Fnext.medusajs.com&demo-image=https%3A%2F%2Fmedusa-server-testing.s3.amazonaws.com%2FCleanShot%2B2023-06-22%2Bat%2B09.00.53%25402x-1687417264472.png&skippable-integrations=1)

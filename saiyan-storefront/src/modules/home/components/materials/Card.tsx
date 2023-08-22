@@ -1,5 +1,5 @@
-import Image from "next/image";
-import { MaterialCardProps } from "types/global";
+import Image from "next/image"
+import { MaterialCardProps } from "types/global"
 
 const Card: React.FC<MaterialCardProps> = ({ material }) => {
   return (
@@ -18,6 +18,6 @@ const Card: React.FC<MaterialCardProps> = ({ material }) => {
         <p>{material.description}</p>
       </div>
     </div>
-  );
-};
-export default Card;
+  )
+}
+export default Card

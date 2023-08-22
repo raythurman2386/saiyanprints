@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next/image"
 
 const About = () => {
   return (
@@ -12,14 +12,9 @@ const About = () => {
           See where we have come from and follow our journey!
         </p>
       </div>
-      <div
-        className="grid grid-row-4 gap-4 text-center p-8"
-      >
+      <div className="grid grid-row-4 gap-4 text-center p-8">
         {abouts.map((about, i) => (
-          <div
-            className="flex flex-col justify-center align-center"
-            key={i}
-          >
+          <div className="flex flex-col justify-center align-center" key={i}>
             <p className="p-2 text-lg font-semibold">{about.date}</p>
             <Image
               height={150}
@@ -38,34 +33,45 @@ const About = () => {
         ))}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default About;
+export default About
 
-const abouts = [{
-    date: '2021-03-01',
-    imgUrl: '/about/1.jpg',
-    title: 'Humble Beginnings',
-    description: 'Aquired our first printer and began learning everything we could about printing and creating functional parts.'
-},{
-    date: '2021-08-07',
-    imgUrl: '/about/2.jpg',
-    title: 'A Store is Born',
-    description: 'An Etsy shop was created to start selling items, designs, and slowly draw attention to the business through Etsy and Instagram.'
-},{
-    date: '2021-09-24',
-    imgUrl: '/about/3.jpg',
-    title: 'Transition to Full Service',
-    description: 'Website built and deployed with the eCommerce portion of the site currently in development to run alongside of the Etsy Shop.'
-},{
-    date: '2022-04-03',
-    imgUrl: '/about/4.jpg',
-    title: 'Storefront Location',
-    description: 'My wife and I moved and in our new home of Oklahoma we have a storefront for my wife\'s candles, my printing, and our friends woodworking shops!'
-},{
-    date: '2023-08-31',
-    imgUrl: '/about/1.jpg',
-    title: 'Full Standalone Store',
-    description: 'Finally broke away from the crutch that is Shopify and Etsy and built my own E-Commerce store.'
-}]
+const abouts = [
+  {
+    date: "2021-03-01",
+    imgUrl: "/about/1.jpg",
+    title: "Humble Beginnings",
+    description:
+      "Aquired our first printer and began learning everything we could about printing and creating functional parts.",
+  },
+  {
+    date: "2021-08-07",
+    imgUrl: "/about/2.jpg",
+    title: "A Store is Born",
+    description:
+      "An Etsy shop was created to start selling items, designs, and slowly draw attention to the business through Etsy and Instagram.",
+  },
+  {
+    date: "2021-09-24",
+    imgUrl: "/about/3.jpg",
+    title: "Transition to Full Service",
+    description:
+      "Website built and deployed with the eCommerce portion of the site currently in development to run alongside of the Etsy Shop.",
+  },
+  {
+    date: "2022-04-03",
+    imgUrl: "/about/4.jpg",
+    title: "Storefront Location",
+    description:
+      "My wife and I moved and in our new home of Oklahoma we have a storefront for my wife's candles, my printing, and our friends woodworking shops!",
+  },
+  {
+    date: "2023-08-31",
+    imgUrl: "/about/1.jpg",
+    title: "Full Standalone Store",
+    description:
+      "Finally broke away from the crutch that is Shopify and Etsy and built my own E-Commerce store.",
+  },
+]

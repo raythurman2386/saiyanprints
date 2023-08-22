@@ -11,7 +11,9 @@
     "dev": "next dev -p 8000",
     "build": "next build",
     "start": "next start -p 8000",
-    "lint": "next lint",
+    "format": "npx prettier --write . --ignore-path .gitignore",
+    "lint": "next lint -- --ignore-path .gitignore",
+    "lint:fix": "npm run format && npm run lint -- --fix",
     "cypress": "cypress open",
     "analyze": "ANALYZE=true next build"
   },

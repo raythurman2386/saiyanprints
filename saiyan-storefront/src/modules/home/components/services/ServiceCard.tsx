@@ -1,5 +1,5 @@
-import Gift from "@modules/common/icons/gift";
-import { ServiceCardProps } from "types/global";
+import Gift from "@modules/common/icons/gift"
+import { ServiceCardProps } from "types/global"
 
 const ServiceCard: React.FC<ServiceCardProps> = ({ service }) => {
   return (
@@ -12,6 +12,6 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ service }) => {
         <p>{service.description}</p>
       </div>
     </div>
-  );
-};
-export default ServiceCard;
+  )
+}
+export default ServiceCard

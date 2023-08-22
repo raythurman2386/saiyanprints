@@ -22,22 +22,22 @@ const ProductTemplate: React.FC<ProductTemplateProps> = ({ product }) => {
   return (
     <ProductProvider product={product}>
       <div className=" bg-neutral-content text-slate-900">
-      <div className="content-container flex flex-col small:flex-row small:items-start py-6 relative max-h-screen[75]">
-        <div className="flex flex-col gap-y-8 w-full">
-          <ImageGallery images={product?.images || []} />
+        <div className="content-container flex flex-col small:flex-row small:items-start py-6 relative max-h-screen[75]">
+          <div className="flex flex-col gap-y-8 w-full">
+            <ImageGallery images={product?.images || []} />
+          </div>
+          <div
+            className="small:sticky small:top-20 w-full py-8 small:py-0 small:max-w-[344px] medium:max-w-[400px] flex flex-col gap-y-12"
+            ref={info}
+          >
+            <ProductInfo product={product} />
+            <ProductTabs product={product} />
+          </div>
         </div>
-        <div
-          className="small:sticky small:top-20 w-full py-8 small:py-0 small:max-w-[344px] medium:max-w-[400px] flex flex-col gap-y-12"
-          ref={info}
-        >
-          <ProductInfo product={product} />
-          <ProductTabs product={product} />
+        <div className="content-container my-12 px-6 small:px-8 small:my-32">
+          <RelatedProducts product={product} />
         </div>
-      </div>
-      <div className="content-container my-12 px-6 small:px-8 small:my-32">
-        <RelatedProducts product={product} />
-      </div>
-      <MobileActions product={product} show={!inView} />
+        <MobileActions product={product} show={!inView} />
       </div>
     </ProductProvider>
   )

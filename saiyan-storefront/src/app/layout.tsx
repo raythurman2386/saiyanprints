@@ -1,11 +1,11 @@
-'use client'
+"use client"
 import Providers from "@modules/providers"
-import { Kaushan_Script } from 'next/font/google'
+import { Kaushan_Script } from "next/font/google"
 import "styles/globals.css"
 
 export const kaushan_script = Kaushan_Script({
-  subsets: ['latin-ext'],
-  weight: '400'
+  subsets: ["latin-ext"],
+  weight: "400",
 })
 
 export default function RootLayout({
