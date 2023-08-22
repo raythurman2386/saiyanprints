@@ -31,7 +31,7 @@ const STORE_CORS = process.env.STORE_CORS || "http://localhost:8000";
 const DATABASE_URL =
   process.env.DATABASE_URL || "postgres://localhost/medusa-store";
 
-const REDIS_URL = process.env.REDIS_URL || "redis://localhost:6379";
+const REDIS_TLS_URL = process.env.REDIS_URL || "redis://localhost:6379";
 
 const plugins = [
   `medusa-fulfillment-manual`,
@@ -71,8 +71,7 @@ const modules = {
   cacheService: {
     resolve: "@medusajs/cache-redis",
     options: {
-      redisUrl: REDIS_URL,
-      tls: true,
+      redisUrl: REDIS_TLS_URL,
     },
   },
 };
@@ -84,9 +83,10 @@ const projectConfig = {
   store_cors: STORE_CORS,
   database_url: DATABASE_URL,
   admin_cors: ADMIN_CORS,
-  redis_url: REDIS_URL,
+  redis_url: REDIS_TLS_URL,
   redis_options: {
     tls: true,
+    rejectUnauthorized: false,
   },
   database_extra:
     process.env.NODE_ENV !== "development"
