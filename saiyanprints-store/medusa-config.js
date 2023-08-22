@@ -72,6 +72,7 @@ const modules = {
     resolve: "@medusajs/cache-redis",
     options: {
       redisUrl: REDIS_URL,
+      ttl: 30,
     },
   },
 };
@@ -84,6 +85,12 @@ const projectConfig = {
   database_url: DATABASE_URL,
   admin_cors: ADMIN_CORS,
   redis_url: REDIS_URL,
+  http_compression: {
+    enabled: true,
+    level: 6,
+    memLevel: 8,
+    threshold: 1024,
+  },
   database_extra:
     process.env.NODE_ENV !== "development"
       ? { ssl: { rejectUnauthorized: false } }
