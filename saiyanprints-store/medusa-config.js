@@ -85,8 +85,10 @@ const projectConfig = {
   admin_cors: ADMIN_CORS,
   redis_url: REDIS_TLS_URL,
   redis_options: {
-    tls: true,
-    rejectUnauthorized: false,
+    tls: {
+      rejectUnauthorized: false,
+    },
+    ssl: verify_none,
   },
   database_extra:
     process.env.NODE_ENV !== "development"
