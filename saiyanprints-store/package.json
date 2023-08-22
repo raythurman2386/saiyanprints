@@ -14,7 +14,7 @@
   ],
   "scripts": {
     "clean": "./node_modules/.bin/rimraf dist",
-    "build": "npm run build:admin && babel src -d dist --extensions \".ts,.js\"",
+    "build": "medusa-admin build && babel src -d dist --extensions \".ts,.js\"",
     "build:base": "cross-env npm run clean && npm run build:server && npm run build:admin",
     "build:server": "cross-env tsc -p tsconfig.json",
     "build:admin": "medusa-admin build --deployment",
