@@ -1,7 +1,10 @@
 "use client"
 import Providers from "@modules/providers"
 import { Kaushan_Script } from "next/font/google"
+import ReactGA from "React-ga4"
 import "styles/globals.css"
+
+ReactGA.initialize(process.env.NEXT_PUBLIC_ANALYTICS_ID)
 
 export const kaushan_script = Kaushan_Script({
   subsets: ["latin-ext"],
