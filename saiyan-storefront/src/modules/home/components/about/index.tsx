@@ -17,7 +17,7 @@ const About = () => {
       >
         {abouts.map((about, i) => (
           <div
-            className="flex flex-col justify-center align-center my-10"
+            className="flex flex-col justify-center align-center"
             key={i}
           >
             <p className="p-2 text-lg font-semibold">{about.date}</p>
@@ -63,4 +63,9 @@ const abouts = [{
     imgUrl: '/about/4.jpg',
     title: 'Storefront Location',
     description: 'My wife and I moved and in our new home of Oklahoma we have a storefront for my wife\'s candles, my printing, and our friends woodworking shops!'
+},{
+    date: '2023-08-31',
+    imgUrl: '/about/1.jpg',
+    title: 'Full Standalone Store',
+    description: 'Finally broke away from the crutch that is Shopify and Etsy and built my own E-Commerce store.'
 }]

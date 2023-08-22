@@ -3,7 +3,7 @@ import { MaterialCardProps } from "types/global";
 
 const Card: React.FC<MaterialCardProps> = ({ material }) => {
   return (
-    <div className="card xs:w-48 sm:w-72 md:w-84 lg:w-96 bg-neutral-content text-slate-900 shadow-sm hover:shadow-xl transition-shadow">
+    <div className="card bg-neutral-content text-slate-900 shadow-sm hover:shadow-xl transition-shadow">
       <figure className="">
         <Image
           height={20}

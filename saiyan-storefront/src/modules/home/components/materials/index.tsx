@@ -4,9 +4,10 @@ const Materials = () => {
   return (
     <div
       id="materials"
-      className="hero min-h-screen bg-base-200 flex flex-col justify-evenly text-center py-20"
+      className="hero min-h-screen bg-base-200 py-20"
     >
-      <div className="flex flex-col px-4 w-8/12">
+      <div className="content-container flex flex-col justify-evenly text-center">
+      <div className="flex flex-col px-4">
         <h2 className="text-5xl font-bold mb-8">Materials</h2>
         <p className="text-lg">
           There are a variety materials that can be printed depending on the
@@ -15,13 +16,15 @@ const Materials = () => {
         </p>
       </div>
       <div
-        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-4 text-center py-8"
+        className="grid xsmall:grid-cols-1 md:grid-cols-2 lg:grid-co xl:grid-cols-3 gap-4 text-center py-12"
       >
         {materials.map((material, i) => (
           <Card material={material} key={i} />
         ))}
       </div>
     </div>
+
+      </div>
   );
 };
 

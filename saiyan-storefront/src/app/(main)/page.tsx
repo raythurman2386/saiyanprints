@@ -6,9 +6,9 @@ import Services from "@modules/home/components/services"
 import { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Home",
+  title: "Home | Saiyan Prints",
   description:
-    "Shop all available models only at the ACME. Worldwide Shipping. Secure Payment.",
+    "Buy high-quality 3D printed products at the best price from Saiyan Prints. We offer a wide range of custom-made 3D items for all your needs.",
 }
 
 const Home = () => {

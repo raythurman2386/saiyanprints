@@ -8,9 +8,10 @@ const Services = () => {
   return (
     <div
       id="services"
-      className="hero bg-base-200 text-neutral-content flex flex-col justify-evenly text-center py-12"
+      className="hero bg-base-200 text-neutral-content py-12"
     >
-      <div className="flex flex-col px-4 w-8/12 py-12">
+      <div className="content-container flex flex-col justify-evenly text-center">
+      <div className="flex flex-col px-4">
         <h2 className="text-5xl font-bold mb-8">Services</h2>
         <p className="text-xl">
           3D Printing has endless possibilities, from toys to functional boat
@@ -20,13 +21,15 @@ const Services = () => {
       </div>
       {/* TODO: Animation for cards  */}
       <div
-        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-center"
+        className="grid xsmall:grid-cols-1 md:grid-cols-2 lg:grid-co xl:grid-cols-3 gap-4 text-center py-12"
       >
         {items.map((service, i) => (
           <ServiceCard service={service} key={i} />
         ))}
       </div>
     </div>
+
+      </div>
   );
 };
 

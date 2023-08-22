@@ -36,7 +36,7 @@ const ProductActions: React.FC<ProductActionsProps> = ({ product }) => {
       )}
       <h3 className="text-xl-regular">{product.title}</h3>
 
-      <p className="text-base-regular">{product.description}</p>
+      <p className="text-base-200">{product.description}</p>
 
       {product.variants.length > 1 && (
         <div className="my-8 flex flex-col gap-y-6">

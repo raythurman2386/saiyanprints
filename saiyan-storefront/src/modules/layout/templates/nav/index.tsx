@@ -6,6 +6,7 @@ import CartDropdown from "@modules/layout/components/cart-dropdown"
 import DropdownMenu from "@modules/layout/components/dropdown-menu"
 import MobileMenu from "@modules/mobile-menu/templates"
 import DesktopSearchModal from "@modules/search/templates/desktop-search-modal"
+import { kaushan_script } from "app/layout"
 import clsx from "clsx"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
@@ -69,7 +70,7 @@ const Nav = () => {
           <div className="flex items-center h-full">
             <Link
               href="/"
-              className="text-xl-semi uppercase text-green-600/90 hover:text-green-700/90"
+              className={`text-xl-semi uppercase text-green-500/90 hover:text-green-700/90 ${kaushan_script.className}`}
             >
               Saiyan Prints
             </Link>
