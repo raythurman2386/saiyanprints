@@ -6,6 +6,9 @@ import { CartDropdownProvider } from "@lib/context/cart-dropdown-context"
 import { MobileMenuProvider } from "@lib/context/mobile-menu-context"
 import { StoreProvider } from "@lib/context/store-context"
 import { MedusaProvider, CartProvider } from "medusa-react"
+import ReactGA from "React-ga4"
+
+ReactGA.initialize(process.env.NEXT_PUBLIC_ANALYTICS_ID);
 
 export default function Providers({ children }: { children: React.ReactNode }) {
   return (
