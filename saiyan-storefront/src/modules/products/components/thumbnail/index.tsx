@@ -38,8 +38,8 @@ const ImageOrPlaceholder = ({
   return image ? (
     <Image
       src={image}
-      alt="Thumbnail"
-      className="absolute inset-0"
+      alt="Product thumbnail"
+      className="absolute inset-0 shadow-lg"
       draggable={false}
       fill
       sizes="100vw"

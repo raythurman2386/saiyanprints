@@ -9,8 +9,8 @@ const FeaturedProducts = () => {
   const { data } = useFeaturedProductsQuery()
 
   return (
-    <div className="py-12 bg-slate-300">
-      <div className="content-container py-12">
+    <div id="feature-products" className="py-12 bg-slate-300">
+      <div className="content-container">
         <div className="flex flex-col items-center text-center mb-16 text-slate-900">
           <h2 className="text-5xl font-bold mb-8">Featured products</h2>
           <p className="text-xl max-w-lg mb-4">
@@ -18,19 +18,21 @@ const FeaturedProducts = () => {
           </p>
           <UnderlineLink href="/store">Explore products</UnderlineLink>
         </div>
-        <ul className="grid grid-cols-2 small:grid-cols-4 gap-x-4 gap-y-8 text-slate-900">
-          {data
-            ? data.map((product) => (
-                <li key={product.id}>
-                  <ProductPreview {...product} />
-                </li>
-              ))
-            : Array.from(Array(4).keys()).map((i) => (
-                <li key={i}>
-                  <SkeletonProductPreview />
-                </li>
-              ))}
-        </ul>
+        <div className="content-container">
+          <ul className="grid grid-cols-1 xsmall:grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 text-slate-900">
+            {data
+              ? data.map((product) => (
+                  <li key={product.id} className="m-auto">
+                    <ProductPreview {...product} />
+                  </li>
+                ))
+              : Array.from(Array(4).keys()).map((i) => (
+                  <li key={i}>
+                    <SkeletonProductPreview />
+                  </li>
+                ))}
+          </ul>
+        </div>
       </div>
     </div>
   )

@@ -46,7 +46,7 @@ const RefinementList = ({
 
   return (
     <div>
-      <div className="px-8 py-4  small:pr-0 small:pl-8 small:min-w-[250px]">
+      <div className="px-8 py-4 small:pr-0 small:pl-8 small:min-w-[250px] hidden md:flex">
         <div className="flex gap-x-3 small:flex-col small:gap-y-3">
           <span className="text-slate-900">Collections</span>
           <ul className="text-slate-900 flex items-center gap-x-4 small:grid small:grid-cols-1 small:gap-y-2">

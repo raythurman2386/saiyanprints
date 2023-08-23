@@ -11,8 +11,11 @@ const ProductPreview = ({
 }: ProductPreviewType) => {
   return (
     <Link href={`/products/${handle}`}>
-      <div>
-        <Thumbnail thumbnail={thumbnail} size="full" />
+      <div className="p-3 flex flex-col flex-1 items-baseline">
+        <div className="w-full">
+
+        <Thumbnail thumbnail={thumbnail} size="medium"/>
+        </div>
         <div className="mt-2">
           <span>{title}</span>
           <div className="flex items-center gap-x-2 mt-1">
