@@ -5,7 +5,7 @@ import SkeletonProductTabs from "@modules/skeletons/components/skeleton-product-
 const SkeletonProductPage = () => {
   return (
     <div>
-      <div className="content-container flex flex-col small:flex-row small:items-start py-6 relative">
+      <div className="content-container bg-slate-300 flex flex-col small:flex-row small:items-start py-6 relative">
         <div className="flex flex-col gap-y-8 w-full">
           <div className="flex items-start relative">
             <div className="hidden small:flex flex-col gap-y-4 sticky top-20">
